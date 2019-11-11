@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="images/logo.png" alt="Alternate Text" />
+        <div class="threeLine " onclick="document.getElementById('nav').classList.toggle('OpenOrClose');">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li onclick="goHome()">HOME</li>
+                <li>COLLECT POINT</li>
+                <li>OFFERS</li>
+                <li>REWARDS</li>
+                <li>ABOUT US</li>
+                <li onclick="goSignUp()">SIGN UP</li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="center">
+        <div class="c-top">
+            <img class="banner" src="images/ban.png" alt="Alternate Text" />
+            <h4> Welcome to flybuys</h4>
+            <h3> Earn points with </br>Points + Cash</h3>
+            <p>
+                Get 1 point back for every $10 you spend
+            </p>
+            <div class="sp" onclick="goSignUp()">SIGN UP</div>
+        </div>
+
+        <section id="newsletter">
+            <div class="container1">
+                <h1>Subscribe To Our Newsletter</h1>
+                <form>
+                    <input class="input" type="email" placeholder="Enter Your Email..." />
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="c-center">
+            <p>
+                We are flybuys, Australia’s most popular loyalty program. Discover
+                more about us, and how you can get us working harder for you. </br>We work
+                with some of the largest household names to bring you heaps of extra
+                benefits, so you’ll collect points on things you’re already doing, at
+                places you’re already at.
+            </p>
+        </div>
+
+        <div class="c-bottom">
+            <h1>KEY FEATURES</h1>
+
+            <div class="box">
+                <img src="images/benefit1.JPG" alt="Alternate Text" />
+                <p class="p1">Ways to collect points</p>
+
+                <p class="p2">
+                    Our extensive networks of Partners includes some of the largest household names, so that you can collect points on things you do everyday.
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="images/benefit3.JPG" alt="Alternate Text" />
+                <p class="p1">Redeem Points to be Rewarded</p>
+                <p class="p2">
+                    We love to give you discounts, offers,
+                    exclusive member benefits and instant rewards. Our partners love to give you deals, savings and points for your shopping,
+                    so you can spend them on a choice of over 6,000 rewards.
+                </p>
+            </div>
+
+            <div class="signup" onclick="goSignUp()">Sign Up</div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="p3">
+            Elaine's Final Web Assessment, Copyright &copy; 2019.10.6
+        </p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

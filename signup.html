@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/signup.css" />
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="images/logo.png" alt="Alternate Text" />
+        <div class="threeLine " onclick="document.getElementById('nav').classList.toggle('OpenOrClose');">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav  id="nav">
+            <ul>
+                <li onclick="goHome()">HOME</li>
+                <li>COLLECT POINT</li>
+                <li>OFFERS</li>
+                <li>REWARDS</li>
+                <li>ABOUT US</li>
+                <li onclick="goSignUp()">SIGN UP</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="center">
+        <div class="one">
+            <div class="title"><p>Personal Detail</p></div>
+            <hr />
+            <div class="subTitle"><p>Primary cardholder details</p></div>
+            <div class="lines">
+                <div class="line1"></div>
+            </div>
+            <div class="form">
+                <label class="lbl">Title：</label>
+                <select id="s1">
+                    <option value="0">Select...</option>
+                    <option value="1">Mr</option>
+                    <option value="2">Mrs</option>
+                    <option value="3">Miss</option>
+                    <option value="4">Ms</option>
+                </select>
+                <br />
+                <br />
+                <label class="lbl">First Name：</label>
+                <input class="textInput" id="firstName" type="text" placeholder="Please enter your first name" value="" />
+                <br />
+                <br />
+                <label class="lbl">Last Name：</label>
+                <input class="textInput" id="lastName" type="text" placeholder="Please enter your last name" value="" />
+                <br />
+                <br />
+                <label class="lbl">Date of Birth：</label>
+                <input class="textInput" id="birth" type="date" placeholder="First" value="" />
+                <br />
+                <br />
+                <label class="lbl">Gender：</label>
+                <input type="radio" name="gender" value="Female" />  &nbsp; Female &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="gender" value="Male" /> &nbsp; &nbsp; Male &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="gender" value="notSpeficified" /> &nbsp; &nbsp; Not speficified
+                <br />
+                <br />
+                <label class="lbl">Email：</label>
+                <input class="textInput" id="email1" type="text" placeholder="Enter your email address" value="" />
+                <br />
+                <br />
+                <label class="lbl"></label>
+                <input class="textInput" id="email2" type="text" placeholder="Re-enter your email address" value="" />
+                <br />
+                <br />
+                <br />
+                <br />
+                <input type="button" class="next" onclick="next1()" value="Next" />
+            </div>
+        </div>
+        <div class="two">
+            <div class="title "><p>Household Detail</p></div>
+            <hr />
+            <div class="subTitle"><p>Home Address</p></div>
+            <div class="lines">
+                <div class="line2"></div>
+            </div>
+            <div class="form">
+                <label class="lbl">Unit Number：</label>
+                <input class="textInput" id="phone" type="text" placeholder="Enter your unit number" value="" />
+                <br />
+                <br />
+                <label class="lbl">Street Number：</label>
+                <input class="textInput" id="streetNumber" type="text" placeholder="Enter your street number" value="" />
+                <br />
+                <br />
+                <label class="lbl">Street Name：</label>
+                <input class="textInput" id="streetName" type="text" placeholder="Enter your street name" value="" />
+                <br />
+                <br />
+                <label class="lbl">Suburb or Town:</label>
+                <input class="textInput" id="suburb" type="text" placeholder="Enter your suburb or town" value="" />
+                <br />
+                <br />
+
+                <label class="lbl">State:</label>
+                <select id="s2">
+                    <option value="0">Select your state</option>
+                    <option value="1">New South Wales</option>
+                    <option value="2">Victoria</option>
+                    <option value="3">Queensland</option>
+                    <option value="4">Western Australia</option>
+                    <option value="5">South Australia</option>
+                    <option value="6">Tasmania</option>
+                </select>
+                <br />
+                <br />
+                <label class="lbl">Post Code：</label>
+                <input class="textInput" id="postCode" type="text" placeholder="Enter your postcode" value="" />
+                <br />
+                <br />
+                <label class="lbl">Phone Number：</label>
+                <input class="textInput" id="phoneNumber" type="text" placeholder="Enter your phone number" value="" />
+                <br />
+                <br />
+                <br />
+                <br />
+                <input type="button" class="next" onclick="next2()" value="Next" />
+                <input type="button" class="next back" onclick="back1()" value="Back" />
+            </div>
+        </div>
+        <div class="three">
+            <div class="title"><p>More About You</p></div>
+            <hr />
+            <div class="subTitle">
+                <p>
+                    The information below helps us provide you with offer that are
+                    relevant to you.
+                </p>
+            </div>
+            <div class="lines">
+                <div class="line3"></div>
+            </div>
+            <div class="form">
+                <p class="question">
+                    Q1: How often does someone in your household shop over internet?
+                </p>
+                <input type="radio" name="q1" value="0" /> &nbsp; &nbsp;<span>At least once a week</span>
+                <br />
+                <input type="radio" name="q1" value="1" /> &nbsp; &nbsp;<span>At least once a month</span>
+                <br />
+                <input type="radio" name="q1" value="2" /> &nbsp; &nbsp;<span>3-4times a year</span>
+                <br />
+                <input type="radio" name="q1" value="3" /> &nbsp; &nbsp;<span>At least once a year</span>
+                <br />
+                <input type="radio" name="q1" value="4" /> &nbsp; &nbsp;<span>Less often </span>
+                <br />
+                <input type="radio" name="q1" value="5" /> &nbsp; &nbsp;<span>Never </span>
+                <br />
+                <br />
+                <br />
+                <p class="question">
+                    Q2: Which type of reward is more interesting to you and your
+                    household.
+                </p>
+                <input type="radio" name="q2" value="0" />&nbsp;&nbsp;<span>Fashion & Accessories</span>
+                <br />
+                <input type="radio" name="q2" value="1" />  &nbsp;<span>Health & Lifestyle</span>
+                <br />
+                <input type="radio" name="q2" value="2" />  &nbsp;<span>Home & Garden</span>
+                <br />
+                <input type="radio" name="q2" value="3" /> &nbsp;<span>Money Off Shop</span>
+                <br />
+                <input type="radio" name="q2" value="4" />  &nbsp;<span>Technology </span>
+                <br />
+                <input type="radio" name="q2" value="5" /> &nbsp;<span>Travel & Fun </span>
+                <br />
+                <input type="button" class="next" onclick="next3()" value="Next" />
+                <input type="button" class="next back" onclick="back2()" value="Back" />
+
+            </div>
+        </div>
+        <div class="four">
+            <div class="title"><p>Set a Password & Policy</p></div>
+            <hr />
+            <div class="subTitle"><p>Set a Password</p></div>
+            <div class="lines">
+                <div class="line4"></div>
+            </div>
+            <div class="form">
+                <label class="lbl">Password：</label>
+                <input class="textInput" id="password" type="text" placeholder="Password" value="" />
+                <br />
+                <br />
+                <label class="lbl">Confirm Password：</label>
+                <input class="textInput" id="confirmPassword" type="text" placeholder="Confirm Password" value="" />
+                <br />
+                <br />
+                <label class="lbl">Flybus Terms & Condition：</label>
+                <select id="s3">
+                    <option value="0">Please read the following terms...</option>
+                    <option value="1">
+                        I've read the policy already...
+                    </option>
+                </select>
+                <br />
+                <br />
+                <label class="lbl">Flybus Privacy Policy：</label>
+                <select id="s4">
+                    <option value="0">Please read the following policy...</option>
+                    <option value="1">
+                        I've read the policy already...
+                    </option>
+                </select>
+                <br />
+                <br />
+                <input type="radio" id="isOk" value="" />&nbsp;I accept the flybuys Terms
+                and Conditions including the flybuys Privacy Policy
+                <br />
+                <br />
+                <br />
+
+                <input type="button" class="next" onclick="sub()" value="Submit" />
+                <input type="button" class="next back" onclick="back3()" value="Back" />
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Elaine's Final Web Assessment, Copyright &copy; 2019.10.6
+    </div>
+
+
+    <div class="interior" style="display:none">
+        <a class="btn" id="open" href="#open-modal">Basic CSS-Only Modal</a>
+    </div>
+
+    <div id="open-modal" class="modal-window">
+        <div style="background-color:#afe2ff;">
+            <a href="#" title="Close" class="modal-close">Close</a>
+            <h1>confirmation!</h1>
+            <label>First Name：</label><span id="a">zs</span>   <br />
+            <label>Gender：</label><span id="b">zs</span>   <br />
+            <label>Phone：</label><span id="c">zs</span>   <br />
+            <label>Unit：</label><span id="d">zs</span>   <br />
+            <label>StreetNumber：</label><span id="e">zs</span>   <br />
+            <label>StreetName：</label><span id="f">zs</span>   <br />
+            <label>Suburb：</label><span id="g">zs</span>   <br />
+            <label>Password：</label><span id="h">zs</span>   <br />
+            <br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input class="btn" type="button" onclick="go()" value="confirm" />
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  width: 20%;
+  margin-left: 5%;
+  float: left;
+}
+
+.header {
+  color: #808080;
+}
+
+.header nav ul li {
+  float: left;
+  margin-left: 3%;
+  margin-top: 3%;
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+li:hover {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+
+.header nav ul li:nth-child(6) {
+  margin-top: 2.5%;
+  background-color: orange;
+  color: white;
+  width: 100px;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  border-bottom: none;
+}
+
+.center {
+  clear: both;
+  min-height: 600px;
+}
+
+.title {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 37px;
+  font-weight: 600;
+  color: #007cc3;
+  width: 600px;
+}
+
+.subTitle {
+  margin: 0 auto;
+  font-size: 22px;
+  font-weight: 600;
+  color: #808080;
+  width: 600px;
+  text-align: center;
+}
+
+.lines {
+  width: 80%;
+  height: 10px;
+  border-radius: 7px;
+  background-color: #dfe6e9;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.line1 {
+  width: 25%;
+  height: 10px;
+  border-radius: 7px;
+  background-color: #74b9ff;
+}
+
+.line2 {
+  width: 50%;
+  height: 10px;
+  border-radius: 7px;
+  background-color: #74b9ff;
+}
+
+.line3 {
+  width: 75%;
+  height: 10px;
+  border-radius: 7px;
+  background-color: #74b9ff;
+}
+
+.line4 {
+  width: 100%;
+  height: 10px;
+  border-radius: 7px;
+  background-color: #74b9ff;
+}
+
+.form {
+  width: 520px;
+  height: 500px;
+  margin: 0 auto;
+  /*border: 1px solid #000000;*/
+  margin-top: 35px;
+}
+
+.lbl {
+  font-size: 22px;
+  font-weight: 500;
+  display: inline-block;
+  width: 160px;
+}
+
+select {
+  width: 300px;
+  height: 30px;
+}
+
+.textInput {
+  width: 300px;
+  height: 30px;
+}
+
+.two {
+  display: none;
+}
+
+.three {
+  display: none;
+  font-size: 19px;
+}
+
+.four {
+  display: none;
+}
+
+.next {
+  margin-left: 20px;
+  width: 70px;
+  height: 30px;
+  background-color: #74b9ff;
+  color: white;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 27px;
+  background-color: #d1d8e0;
+  clear: both;
+  line-height: 50px;
+}
+
+.back {
+  border: 1px solid #000000;
+  color: black;
+  background-color: white;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  background-color: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+/*model window(pop-ups window) resource from: http://www.jq22.com/code2521) for the final confirmation part*/ 
+.modal-window {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+/* model window*/
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+/* model window*/
+.modal-window > div {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: #ffffff;
+}
+/* model window*/
+.modal-window header {
+  font-weight: bold;
+}
+/* model window*/
+.modal-window h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+/* model window*/
+.modal-close {
+  color: #000000;
+  line-height: 50px;
+  font-size: 80%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  text-decoration: none;
+}
+/* model window: for the close button- hover effect*/
+.modal-close:hover {
+  color: black;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+small {
+  color: #aaa;
+}
+.threeLine {
+  display: none;
+}
+
+.line {
+  width: 20px;
+  border-bottom: 2px solid #000000;
+  margin-top: 5px;
+}
+/*When the canvas width smaller than 600px, then the format will operate by the fllowing format*/
+@media screen and (max-width: 600px) {
+  .header nav li {
+    width: 100%;
+    background-color: aliceblue;
+  }
+
+  .header nav ul li:nth-child(6) {
+    position: absolute;
+    top: 0px;
+    right: 70px;
+  }
+
+  .threeLine {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  .OpenOrClose {
+    display: block !important;
+  }
+  .footer {
+    font-size: 17px;
+  }
+}
+
+.title {
+  position: relative;
+  animation: moveRight 3s;
+  -webkit-animation: moveRight 3s;
+}
+/*css animation: Make the title move from left to right(other browser)*/
+@keyframes moveRight {
+  from {
+    left: -200px;
+  }
+
+  to {
+    left: 0px;
+  }
+}
+/* Css animation only for Google Browser*/
+@-webkit-keyframes moveRight {
+  from {
+    left: -200px;
+  }
+
+  to {
+    left: 0px;
+  }
+}

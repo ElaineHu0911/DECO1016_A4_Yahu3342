@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+  width: 20%;
+  margin-left: 5%;
+  float: left;
+}
+
+.header {
+  color: #808080;
+}
+
+.header nav ul li {
+  float: left;
+  margin-left: 3%;
+  margin-top: 3%;
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+li:hover {
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+/*Specialize for the sign up button as primary buttom*/
+.header nav ul li:nth-child(6) {
+  margin-top: 2.5%;
+  background-color: #ffb142;
+  color: white;
+  width: 100px;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  border-bottom: none;
+}
+
+.banner {
+  width: 100%;
+  opacity: 1;
+}
+
+.c-top {
+  position: relative;
+  clear: both;
+}
+
+.c-top h4 {
+  position: absolute;
+  top: 12%;
+  text-align: left;
+  left: 10%;
+  color: #ffc048;
+  font-size: 45px;
+  font-family: "Architects Daughter", cursive;
+}
+
+.c-top h3 {
+  position: absolute;
+  top: 28%;
+  text-align: left;
+  left: 15%;
+  color: #ffffff;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.c-top p {
+  position: absolute;
+  top: 65%;
+  text-align: left;
+  left: 15%;
+  width: 35%;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.c-center {
+  min-height: 200px;
+  background-color: #808080;
+  width: 100%;
+  text-align: center;
+}
+
+.c-center p {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 3.5%;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+#newsletter {
+  padding: 15px;
+  color: #808080;
+  background: #f5f5f5;
+}
+
+.container1 {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+/*Key features section, constrain the text at the middle of the page*/
+.c-bottom {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.box {
+  width: 40%;
+  min-height: 300px;
+  /*border: 1px solid #000000;*/
+  margin: 5%;
+  float: left;
+}
+/* define the image size by image box*/
+.box img {
+  width: 100%;
+}
+
+.p1 {
+  font-size: 23px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.p2 {
+  padding: 2%;
+  color: #808080;
+}
+
+.p3 {
+  color: #778ca3;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 27px;
+  background-color: #d1d8e0;
+  clear: both;
+  line-height: 50px;
+}
+/*Sign up button on the banner*/
+.sp {
+  cursor: pointer;
+  position: absolute;
+  top: 80%;
+  left: 37%;
+  background-color: #ffb142;
+  color: white;
+  width: 180px;
+  text-align: center;
+  line-height: 55px;
+  height: 55px;
+  font-size: 23px;
+}
+/*sign up for the menu bar and the bottom one*/
+.signup {
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 23px;
+  text-align: center;
+  margin-top: 35px !important;
+  margin-bottom: 20px !important;
+  clear: both;
+  margin: 0 auto;
+  background-color: #ffb142;
+  color: white;
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 35px;
+}
+
+.container1 h1 {
+  float: left;
+  margin-left: 75px;
+}
+
+.container1 form {
+  float: left;
+  margin-top: 37px;
+  margin-left: 75px;
+}
+
+.button_1 {
+  width: 100px;
+  height: 30px;
+  border: none;
+}
+
+.threeLine {
+  display: none;
+}
+
+.line {
+  width: 20px;
+  border-bottom: 2px solid #000000;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .header nav li {
+    width: 100%;
+    background-color: aliceblue;
+  }
+  .header nav ul li:nth-child(6) {
+    position: absolute;
+    top: 0px;
+    right: 70px;
+  }
+  .c-top h3 {
+    font-size: 27px;
+    top: 35%;
+  }
+  .c-top h4 {
+    top: 6%;
+  }
+  .c-top img {
+    margin-top: 20px;
+  }
+  .sp {
+    top: 80%;
+    left: 49%;
+    width: 100px;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    font-size: 15px;
+  }
+  .box {
+    width: 100%;
+  }
+  .p3 {
+    font-size: 17px;
+  }
+  .threeLine {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    cursor: pointer;
+  }
+  #nav {
+    display: none;
+  }
+  .OpenOrClose {
+    display: block !important;
+  }
+}
