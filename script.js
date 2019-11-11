@@ -3,7 +3,7 @@ function goSignUp() {
 }
 /*Back to Home or Go to Sign up page*/
 function goHome() {
-  location.href = "home.html";
+  location.href = "index.html";
 }
 /* Get value that the user title for the first question*/
 var obj = {};
